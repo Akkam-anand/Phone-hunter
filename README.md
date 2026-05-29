@@ -28,14 +28,5 @@ A clean, fast phone search app built with vanilla HTML, CSS, and JavaScript.
 - CSS Grid with `auto-fill` for responsive card layout
 - `@keyframes` for card fade-in, spinner, and modal pop-in animations
 
-## How to run
 
-Just open `index.html` in any browser. No build step, no dependencies.
 
-## Live demo
-
-[Hosted link here]
-
-## Screenshots
-
-[Add screenshots here]
