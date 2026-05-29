@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phone Hunter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-icon">&#9650;</span>
+        <span>Phone<strong>Hunter</strong></span>
+      </div>
+      <p class="tagline">Find your next device, instantly.</p>
+    </div>
+  </header>
+
+  <!-- Search Section -->
+  <section class="search-section">
+    <div class="search-wrapper">
+      <input type="text" id="searchInput" placeholder="Search by brand or model… e.g. Samsung, iPhone" />
+      <button id="searchBtn">Search</button>
+    </div>
+    <button id="showAllBtn">Show All</button>
+  </section>
+
+  <!-- Loader -->
+  <div id="loader" class="loader hidden">
+    <div class="spinner"></div>
+    <p>Fetching phones…</p>
+  </div>
+
+  <!-- Error message -->
+  <div id="errorMsg" class="error-msg hidden"></div>
+
+  <!-- Results count -->
+  <div id="resultsInfo" class="results-info hidden"></div>
+
+  <!-- Cards Grid -->
+  <main id="phoneGrid" class="phone-grid"></main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">&#10005;</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Built with the <a href="https://openapi.programming-hero.com" target="_blank">Programming Hero Phone API</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
